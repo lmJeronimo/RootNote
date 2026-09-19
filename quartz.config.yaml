@@ -1,12 +1,12 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Quartz 5
+  pageTitle: "RootNotes"
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
   analytics:
     provider: plausible
-  locale: en-US
+  locale: pt-BR
   baseUrl: rootnote.github.io
   ignorePatterns:
     - private
@@ -161,17 +161,17 @@ plugins:
     enabled: true
     layout:
       position: left
-      priority: 50
+      priority: 20
   - source: "@quartz-community/graph"
     enabled: true
     layout:
       position: right
-      priority: 10
+      priority: 20
   - source: "@quartz-community/search"
     enabled: true
     layout:
       position: left
-      priority: 20
+      priority: 10
       group: toolbar
       groupOptions:
         grow: true
@@ -179,7 +179,7 @@ plugins:
     enabled: true
     layout:
       position: right
-      priority: 50
+      priority: 10
   - source: "@quartz-community/article-title"
     enabled: true
     layout:
@@ -204,7 +204,7 @@ plugins:
     enabled: true
     layout:
       position: left
-      priority: 30
+      priority: 5
       group: toolbar
   - source: "@quartz-community/reader-mode"
     enabled: true
@@ -230,10 +230,11 @@ plugins:
     enabled: true
     options:
       links:
-        GitHub: https://github.com/jackyzha0/quartz
+        Projeto: https://github.com/jackyzha0/quartz
+        GitHub: https://github.com/lmJeronimo
         Discord Community: https://discord.gg/cRFFHYye7t
     layout:
-      position: footer
+      position: afterBody
       priority: 50
   - source: "@quartz-community/recent-notes"
     enabled: false
@@ -267,13 +268,6 @@ plugins:
       priority: 15
       display: all
   - source: "@quartz-community/obsidian-plugin-excalidraw"
-    enabled: true
-    options:
-      enableInteraction: true
-      darkMode: auto
-      exportPadding: 20
-    order: 50
-  - source: github:quartz-community/obsidian-plugin-excalidraw
     enabled: true
     options:
       enableInteraction: true
